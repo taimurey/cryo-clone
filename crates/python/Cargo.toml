@@ -1,0 +1,23 @@
+[package]
+name = "cryo_python"
+version = "0.2.0"
+edition = "2021"
+build = "build.rs"
+
+# See more keys and their definitions at https://doc.rust-lang.org/cargo/reference/manifest.html
+[lib]
+name = "cryo"
+crate-type = ["cdylib"]
+
+[dependencies]
+cryo_cli = { version = "0.2.0", path = "../cli" }
+cryo_freeze = { version = "0.2.0", path = "../freeze" }
+
+polars = { workspace = true }
+pyo3 = { workspace = true }
+pyo3-asyncio = { workspace = true }
+pyo3-polars = { workspace = true }
+tokio = { workspace = true }
+
+[build-dependencies]
+pyo3-build-config = { workspace = true }

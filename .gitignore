@@ -1,0 +1,12 @@
+
+target
+/target
+*.csv
+*.csv_tmp
+*.parquet
+*.parquet_tmp
+*.json
+*.json_tmp
+TODO.md
+graveyard
+.idea
